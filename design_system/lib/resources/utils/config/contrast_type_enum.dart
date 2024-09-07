@@ -1,0 +1,4 @@
+enum Contrast {
+  day,
+  night,
+}
