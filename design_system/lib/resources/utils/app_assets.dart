@@ -24,8 +24,12 @@ final class AppAssets {
   static String pin = "assets/icons/pin.svg";
   static String dark = "assets/icons/dark.svg";
   static String light = "assets/icons/light.svg";
+  static String earth = "assets/icons/earth.svg";
   static String language = "assets/icons/language.svg";
   static String settings = "assets/icons/settings.svg";
+  static String settingsSolid = "assets/icons/settings_solid.svg";
+  static String earthSolid = "assets/icons/earth_solid.svg";
+  static String searchSolid = "assets/icons/search_solid.svg";
 
   static String humidity = "assets/icons/humidity.svg";
   static String raining = "assets/icons/raining.svg";

@@ -34,6 +34,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get onboardingSkipButton => 'Pular';
 
   @override
+  String get navigationBarWeatherLabel => 'Clima';
+
+  @override
+  String get navigationBarSearchLabel => 'Buscar';
+
+  @override
+  String get navigationBarSettingsLabel => 'Ajustes';
+
+  @override
   String get homeSearchLabel => 'Buscar uma cidade';
 
   @override

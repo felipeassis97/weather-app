@@ -34,6 +34,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get onboardingSkipButton => 'Skip';
 
   @override
+  String get navigationBarWeatherLabel => 'Weather';
+
+  @override
+  String get navigationBarSearchLabel => 'Search';
+
+  @override
+  String get navigationBarSettingsLabel => 'Settings';
+
+  @override
   String get homeSearchLabel => 'Search for a city';
 
   @override

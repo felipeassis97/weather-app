@@ -11,6 +11,10 @@
   "onboardingStartButton": "Começar",
   "onboardingSkipButton": "Pular",
 
+  "navigationBarWeatherLabel": "Clima",
+  "navigationBarSearchLabel": "Buscar",
+  "navigationBarSettingsLabel": "Ajustes",
+
   "homeSearchLabel": "Buscar uma cidade",
   "homeCurrentWeatherWind": "Vento",
   "homeCurrentWeatherHumidity": "Humidade",

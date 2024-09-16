@@ -30,7 +30,7 @@ class _AppWidgetState extends State<AppWidget> {
           return MaterialApp.router(
             title: 'Weather App',
             debugShowCheckedModeBanner: false,
-            routerConfig: RouteManager.router,
+            routerConfig: goRouter,
             theme: CustomTheme.theme(
               context,
               config: themeControl.config,

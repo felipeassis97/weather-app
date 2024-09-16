@@ -11,6 +11,10 @@
   "onboardingStartButton": "Start",
   "onboardingSkipButton": "Skip",
 
+  "navigationBarWeatherLabel": "Weather",
+  "navigationBarSearchLabel": "Search",
+  "navigationBarSettingsLabel": "Settings",
+
   "homeSearchLabel": "Search for a city",
   "homeCurrentWeatherWind": "Wind",
   "homeCurrentWeatherHumidity": "Humidity",

@@ -23,14 +23,14 @@ class CollapsedItemWidget extends StatelessWidget {
     return ListTile(
       leading: SvgPreviewWidget(
         iconPath: icon,
-        color: context.colors.onTertiary,
+        color: context.colors.tertiary,
       ),
       title: Row(
         children: [
           Text(
             title,
             style: context.text.bodyLarge?.copyWith(
-              color: context.colors.onTertiary,
+              color: context.colors.tertiary,
             ),
           ),
           const Spacer(),

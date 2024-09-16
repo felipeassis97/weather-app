@@ -151,6 +151,24 @@ abstract class AppLocalizations {
   /// **'Skip'**
   String get onboardingSkipButton;
 
+  /// No description provided for @navigationBarWeatherLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Weather'**
+  String get navigationBarWeatherLabel;
+
+  /// No description provided for @navigationBarSearchLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get navigationBarSearchLabel;
+
+  /// No description provided for @navigationBarSettingsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get navigationBarSettingsLabel;
+
   /// No description provided for @homeSearchLabel.
   ///
   /// In en, this message translates to:
