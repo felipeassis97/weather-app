@@ -5,15 +5,22 @@ class LightModeColors {
   static ColorScheme get nightContrast => _nightContrast;
 
   static ColorScheme get _dayContrast => ColorScheme.fromSeed(
-      contrastLevel: 1.0,
-      brightness: Brightness.light,
-      seedColor: Color(0xffFFB701),
-      primary: Colors.yellow.shade50);
+        contrastLevel: 1.0,
+        brightness: Brightness.light,
+        seedColor: Color(0xffFFB701),
+        secondary: Colors.blueAccent.shade100,
+        primary: Colors.yellow.shade50,
+        tertiary: Colors.black,
+        onTertiary: Colors.white,
+      );
 
   static ColorScheme get _nightContrast => ColorScheme.fromSeed(
         contrastLevel: 1.0,
         brightness: Brightness.light,
         seedColor: Color(0xff023047),
-        primary: Colors.blueAccent.shade100,
+        primary: Color(0xffB1FFFF),
+        secondary: Color(0xff023047),
+        tertiary: Colors.white,
+        onTertiary: Colors.black,
       );
 }

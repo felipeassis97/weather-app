@@ -1,0 +1,4 @@
+enum ConfigType {
+  theme,
+  language,
+}
