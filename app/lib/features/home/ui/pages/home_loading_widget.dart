@@ -1,5 +1,6 @@
+import 'package:design_system/design_system.dart';
+import 'package:design_system/resources/utils/app_assets.dart';
 import 'package:flutter/material.dart';
-import 'package:weather_app/common/utils/extensions/context_extension.dart';
 
 class HomeLoadingWidget extends StatelessWidget {
   const HomeLoadingWidget({super.key});
@@ -7,8 +8,8 @@ class HomeLoadingWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: CircularProgressIndicator(
-        color: context.colors.onSurface,
+      child: AnimationPreviewWidget(
+        filePath: AppAssets.loading,
       ),
     );
   }

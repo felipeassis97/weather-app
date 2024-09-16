@@ -50,7 +50,7 @@ class _ExpandedItemWidgetState extends State<ExpandedItemWidget> {
                       Text(
                         _currentList[index],
                         style: context.text.bodyMedium?.copyWith(
-                          color: context.colors.onTertiary,
+                          color: context.colors.tertiary,
                         ),
                       ),
                       const SizedBox(width: 12),
