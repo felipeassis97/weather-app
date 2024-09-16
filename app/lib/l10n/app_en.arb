@@ -1,0 +1,30 @@
+{
+  "@@locale": "en",
+
+  "onboardingStepOneTitleLabel": "Track Weather Wherever You Are!",
+  "onboardingStepOneDescriptionLabel": "Check current conditions and get a detailed 7-day forecast from anywhere in the world.",
+  "onboardingStepTwoTitleLabel": "Save Your Favorite Locations!",
+  "onboardingStepTwoDescriptionLabel": "Add and save your favorite places to quickly access weather details anytime.",
+  "onboardingStepThreeTitleLabel": "Simple and Efficient Search!",
+  "onboardingStepThreeDescriptionLabel": "Search by city, ZIP code, or coordinates to find weather details for any place in the world.",
+  "onboardingNextButton": "Next",
+  "onboardingStartButton": "Start",
+  "onboardingSkipButton": "Skip",
+
+  "homeSearchLabel": "Search for a city",
+  "homeCurrentWeatherWind": "Wind",
+  "homeCurrentWeatherHumidity": "Humidity",
+  "homeCurrentWeatherRain": "Rain",
+  "homeCurrentWeatherSunset": "Sunset",
+  "homeTodayLabel": "Today",
+
+  "settingsAppBarTitle": "Settings",
+  "settingsLanguagesTitle": "Language",
+  "settingsLanguagesPortuguese": "Portuguese",
+  "settingsLanguagesSpanish": "Spanish",
+  "settingsLanguagesEnglish": "English",
+  "settingsModesTitle": "Theme mode",
+  "settingsModeDark": "Dark",
+  "settingsModeLight": "Light"
+
+}

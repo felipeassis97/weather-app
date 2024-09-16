@@ -20,6 +20,8 @@ class SvgPreviewWidget extends StatelessWidget {
       height: height,
       width: width,
       child: SvgPicture.asset(iconPath,
+          height: height,
+          width: width,
           colorFilter: color != null
               ? ColorFilter.mode(
                   color!,

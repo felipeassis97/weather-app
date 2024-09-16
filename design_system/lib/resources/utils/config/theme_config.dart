@@ -8,7 +8,7 @@ class ThemeConfig {
   final Contrast? contrast;
 
   ThemeConfig({
-    this.themeMode = ThemeMode.light,
+    this.themeMode = ThemeMode.system,
     this.contrast = Contrast.day,
   });
 

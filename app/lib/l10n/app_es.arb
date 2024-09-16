@@ -1,0 +1,29 @@
+{
+  "@@locale": "es",
+
+  "onboardingStepOneTitleLabel": "¡Sigue el Clima Donde Quiera que Estés!",
+  "onboardingStepOneDescriptionLabel": "Consulta las condiciones actuales y obtén un pronóstico detallado de 7 días desde cualquier lugar del mundo.",
+  "onboardingStepTwoTitleLabel": "¡Guarda tus Lugares Favoritos!",
+  "onboardingStepTwoDescriptionLabel": "Añade y guarda tus lugares favoritos para acceder rápidamente a los detalles del clima en cualquier momento.",
+  "onboardingStepThreeTitleLabel": "¡Búsqueda Simple y Eficiente!",
+  "onboardingStepThreeDescriptionLabel": "Busca por ciudad, código postal o coordenadas para encontrar los detalles del clima en cualquier parte del mundo.",
+  "onboardingNextButton": "Siguiente",
+  "onboardingStartButton": "Empezar",
+  "onboardingSkipButton": "Saltar",
+
+  "homeSearchLabel": "Buscar una ciudad",
+  "homeCurrentWeatherWind": "Viento",
+  "homeCurrentWeatherHumidity": "Umidade",
+  "homeCurrentWeatherRain": "Lluvia",
+  "homeCurrentWeatherSunset": "Atardecer",
+  "homeTodayLabel": "Hoy",
+
+  "settingsAppBarTitle": "Configuraciones",
+  "settingsLanguagesTitle": "Idioma",
+  "settingsLanguagesPortuguese": "Portugués",
+  "settingsLanguagesSpanish": "Español",
+  "settingsLanguagesEnglish": "Inglés",
+  "settingsModesTitle": "Modo de tema",
+  "settingsModeDark": "Oscuro",
+  "settingsModeLight": "Claro"
+}
