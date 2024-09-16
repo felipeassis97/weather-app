@@ -10,7 +10,7 @@ class DarkModeColors {
         seedColor: Color(0XFF023553),
         primary: Color(0XFF47BBE1),
         secondary: Color(0XFF104084),
-        tertiary: Colors.black,
+        tertiary: Colors.white,
         onTertiary: Colors.black,
       );
 
@@ -21,6 +21,6 @@ class DarkModeColors {
         primary: Color(0XFF001026),
         secondary: Color(0XFF104084),
         tertiary: Colors.white,
-        onTertiary: Colors.white,
+        onTertiary: Colors.black,
       );
 }

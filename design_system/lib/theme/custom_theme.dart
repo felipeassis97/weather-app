@@ -13,6 +13,10 @@ class CustomTheme {
       useMaterial3: true,
       colorScheme: _colorScheme,
       textTheme: CustomTextTheme.theme(_colorScheme),
+      navigationBarTheme: NavigationBarThemeData(
+          indicatorColor: _colorScheme.secondary,
+          backgroundColor: _colorScheme.onPrimary,
+          elevation: 1),
       radioTheme: RadioThemeData(
         fillColor: WidgetStatePropertyAll(_colorScheme.secondary),
         splashRadius: 30.0,
