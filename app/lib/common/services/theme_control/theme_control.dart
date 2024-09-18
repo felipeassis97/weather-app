@@ -10,6 +10,7 @@ class ThemeControl {
   var _config = ThemeConfig();
   ThemeConfig get config => _config;
 
+  /// Locale
   var _locale = Locale(SupportedLocalesEnum.en.code);
   Locale get locale => _locale;
 
@@ -20,6 +21,7 @@ class ThemeControl {
   ];
   List<SupportedLocalesEnum> get supportedLocales => _supportedLocales;
 
+  /// Themes
   final List<SupportedThemesEnum> _supportedThemes = [
     SupportedThemesEnum.dark,
     SupportedThemesEnum.light

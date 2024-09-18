@@ -15,16 +15,15 @@ class SharedPreferencesCache implements ICacheManager {
   }
 
   @override
-  Future<ControllersEnum> get(ControllersEnum key) async {
+  Future<String> get(ControllersEnum key) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     try {
       if (prefs.containsKey(key.key)) {
-        final response = prefs.get(key.key).toString();
-        return ControllersEnum.fromKey(response);
+        return prefs.get(key.key).toString();
       }
       throw CacheException(message: 'Failed to find $key');
     } catch (e) {
-      throw CacheException(message: 'Failed to delete $key');
+      throw CacheException(message: 'Failed to find $key');
     }
   }
 

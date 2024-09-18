@@ -83,4 +83,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsModeLight => 'Light';
+
+  @override
+  String get loadingLabel => 'Loading...';
 }

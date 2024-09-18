@@ -1,0 +1,4 @@
+enum ConfigOptionViewType {
+  theme,
+  language,
+}

@@ -29,5 +29,7 @@
   "settingsLanguagesEnglish": "Inglés",
   "settingsModesTitle": "Modo de tema",
   "settingsModeDark": "Oscuro",
-  "settingsModeLight": "Claro"
+  "settingsModeLight": "Claro",
+
+  "loadingLabel": "Cargando..."
 }

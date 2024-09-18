@@ -30,6 +30,7 @@ final class AppAssets {
   static String settingsSolid = "assets/icons/settings_solid.svg";
   static String earthSolid = "assets/icons/earth_solid.svg";
   static String searchSolid = "assets/icons/search_solid.svg";
+  static String appIcon = "assets/icons/app_icon.svg";
 
   static String humidity = "assets/icons/humidity.svg";
   static String raining = "assets/icons/raining.svg";

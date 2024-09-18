@@ -1,9 +1,9 @@
 import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weather_app/features/onboarding/data/models/onboarding_step_enum.dart';
-import 'package:weather_app/features/onboarding/ui/bloc/onboarding_cubit.dart';
-import 'package:weather_app/features/onboarding/ui/widgets/onboarding_item_widget.dart';
+import 'package:weather_app/features/initialization/data/models/onboarding_step_enum.dart';
+import 'package:weather_app/features/initialization/ui/bloc/initialization_cubit.dart';
+import 'package:weather_app/features/initialization/ui/widgets/onboarding_item_widget.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
@@ -18,7 +18,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   @override
   Widget build(BuildContext context) {
-    final cubit = BlocProvider.of<OnboardingCubit>(context);
+    final cubit = BlocProvider.of<InitializationCubit>(context);
 
     return Scaffold(
       body: BlocBuilder(
