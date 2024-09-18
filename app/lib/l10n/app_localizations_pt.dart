@@ -83,4 +83,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get settingsModeLight => 'Claro';
+
+  @override
+  String get loadingLabel => 'Carregando...';
 }

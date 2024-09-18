@@ -5,9 +5,10 @@ import 'package:weather_app/common/routes/route_name.dart';
 import 'package:weather_app/common/routes/home_routes.dart';
 import 'package:weather_app/common/routes/search_routes.dart';
 import 'package:weather_app/common/routes/settings_routes.dart';
-import 'package:weather_app/features/onboarding/ui/bloc/onboarding_cubit.dart';
-import 'package:weather_app/features/onboarding/ui/pages/onboarding_page.dart';
+import 'package:weather_app/features/initialization/ui/bloc/initialization_cubit.dart';
+import 'package:weather_app/features/initialization/ui/pages/onboarding_page.dart';
 import 'package:weather_app/common/widgets/nav_bar/scaffold_with_nested_navigation.dart';
+import 'package:weather_app/features/initialization/ui/pages/splash_page.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
 final _homeNavigatorKey = GlobalKey<NavigatorState>();
@@ -15,13 +16,21 @@ final _searchNavigatorKey = GlobalKey<NavigatorState>();
 final _settingsNavigatorKey = GlobalKey<NavigatorState>();
 
 final goRouter = GoRouter(
-  initialLocation: '/',
+  initialLocation: RouteName.splash,
   navigatorKey: _rootNavigatorKey,
   routes: [
     GoRoute(
-      path: RouteName.onboarding,
+      path: RouteName.splash,
       builder: (context, state) => BlocProvider(
-        create: (context) => OnboardingCubit(),
+        create: (context) => InitializationCubit(),
+        child: const SplashPage(),
+      ),
+    ),
+    GoRoute(
+      path: RouteName.onboarding,
+      name: RouteName.onboarding,
+      builder: (context, state) => BlocProvider(
+        create: (context) => InitializationCubit(),
         child: const OnboardingPage(),
       ),
     ),

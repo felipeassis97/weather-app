@@ -3,10 +3,10 @@ import 'package:design_system/design_system.dart';
 import 'package:design_system/resources/utils/app_assets.dart';
 import 'package:weather_app/common/services/theme_control/theme_control.dart';
 import 'package:weather_app/common/utils/extensions/context_extension.dart';
-import 'package:weather_app/features/settings/data/config_type.dart';
+import 'package:weather_app/features/settings/data/models/response/config__option_view_type.dart';
 
 class CollapsedItemWidget extends StatelessWidget {
-  final ConfigType type;
+  final ConfigOptionViewType type;
   final ThemeControl themeControl;
 
   const CollapsedItemWidget({
@@ -47,7 +47,7 @@ class CollapsedItemWidget extends StatelessWidget {
   String _iconAsset(BuildContext context) {
     final theme = themeControl.config.themeMode;
 
-    if (type == ConfigType.theme) {
+    if (type == ConfigOptionViewType.theme) {
       if (theme == ThemeMode.light) {
         return (AppAssets.light);
       } else {
@@ -60,14 +60,14 @@ class CollapsedItemWidget extends StatelessWidget {
 
   (String, String?) _title(BuildContext context) {
     switch (type) {
-      case ConfigType.theme:
+      case ConfigOptionViewType.theme:
         return (
           context.textLocale.settingsModesTitle,
           themeControl.config.themeMode == ThemeMode.light
               ? context.textLocale.settingsModeLight
               : context.textLocale.settingsModeDark
         );
-      case ConfigType.language:
+      case ConfigOptionViewType.language:
         return (context.textLocale.settingsLanguagesTitle, null);
       default:
         throw Exception('Type not found');

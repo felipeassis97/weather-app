@@ -5,8 +5,8 @@ import 'package:weather_app/common/services/theme_control/theme_control.dart';
 import 'package:weather_app/common/utils/extensions/context_extension.dart';
 import 'package:weather_app/features/home/ui/bloc/home_cubit.dart';
 import 'package:weather_app/features/home/ui/bloc/home_state.dart';
-import 'package:weather_app/features/home/ui/pages/forecast_widget.dart';
-import 'package:weather_app/features/home/ui/pages/home_loading_widget.dart';
+import 'package:weather_app/features/home/ui/widgets/forecast_widget.dart';
+import 'package:weather_app/common/widgets/feedbacks/loading_widget.dart';
 
 class HomePage extends StatefulWidget {
   final ThemeControl themeControl;
@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
           bloc: BlocProvider.of<HomeCubit>(context),
           builder: (context, state) {
             if (state is LoadingHomeState) {
-              return const HomeLoadingWidget();
+              return const LoadingWidget();
             } else if (state is SuccessHomeState) {
               return Container(
                 width: context.widthSize,

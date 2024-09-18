@@ -8,6 +8,17 @@ enum SupportedThemesEnum {
   final ThemeMode mode;
   const SupportedThemesEnum(this.mode);
 
+  static SupportedThemesEnum fromMode(String mode) {
+    switch (mode) {
+      case 'dark':
+        return SupportedThemesEnum.dark;
+      case 'light':
+        return SupportedThemesEnum.light;
+      default:
+        throw Exception('Type not found');
+    }
+  }
+
   @override
   String toString([AppLocalizations? localization]) {
     if (localization == null) {

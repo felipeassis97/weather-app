@@ -5,11 +5,11 @@ import 'package:flutter/scheduler.dart';
 import 'package:go_router/go_router.dart';
 import 'package:weather_app/common/routes/route_name.dart';
 import 'package:weather_app/common/utils/extensions/context_extension.dart';
-import 'package:weather_app/features/onboarding/data/models/onboarding_step_enum.dart';
-import 'package:weather_app/features/onboarding/ui/bloc/onboarding_cubit.dart';
+import 'package:weather_app/features/initialization/data/models/onboarding_step_enum.dart';
+import 'package:weather_app/features/initialization/ui/bloc/initialization_cubit.dart';
 
 class OnboardingItemWidget extends StatefulWidget {
-  final OnboardingCubit cubit;
+  final InitializationCubit cubit;
   final OnboardingStepEnum step;
   final PageController pageController;
 
