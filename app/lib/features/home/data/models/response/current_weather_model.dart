@@ -40,4 +40,18 @@ class CurrentWeatherModel {
       throw DecoderException(message: 'Fail decode Current, $e');
     }
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      "last_updated": lastUpdated,
+      "temp_c": tempC,
+      "temp_f": tempF,
+      "is_day": isDay ? 1 : 0,
+      "wind_mph": maxWindMph,
+      "feelslike_c": feelsLikeC,
+      "feelslike_f": feelsLikeF,
+      "humidity": humidity,
+      "condition": condition.toJson(),
+    };
+  }
 }

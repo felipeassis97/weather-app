@@ -52,4 +52,27 @@ class DayResponseModel {
       throw DecoderException(message: 'Fail decode DayResponseModel, $e');
     }
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'date': date.toIso8601String(),
+      'day': {
+        'maxtemp_c': maxTempC,
+        'maxtemp_f': maxTempF,
+        'mintemp_c': minTempC,
+        'mintemp_f': minTempF,
+        'maxwind_mph': maxWindMph,
+        'daily_chance_of_rain': chanceOfRain,
+        'daily_chance_of_snow': chanceOfSnow,
+        'avghumidity': humidity,
+      },
+      'astro': {
+        'sunrise': sunrise,
+        'sunset': sunset,
+      },
+      'hour': hour
+          .map((e) => e.toJson())
+          .toList(), // Assuming HourDayWeatherModel has a toJson() method
+    };
+  }
 }

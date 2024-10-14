@@ -26,11 +26,10 @@ class NavigationBarWidget extends StatelessWidget {
             icon: SvgPreviewWidget(
               iconPath: AppAssets.earth,
               color: context.colors.onSurface,
-              // height: 28,
             ),
             selectedIcon: SvgPreviewWidget(
               iconPath: AppAssets.earthSolid,
-              color: context.colors.onSurface,
+              color: context.colors.surface,
               height: 28,
             ),
           ),
@@ -42,7 +41,7 @@ class NavigationBarWidget extends StatelessWidget {
             ),
             selectedIcon: SvgPreviewWidget(
               iconPath: AppAssets.searchSolid,
-              color: context.colors.onSurface,
+              color: context.colors.surface,
               height: 28,
             ),
           ),
@@ -54,7 +53,7 @@ class NavigationBarWidget extends StatelessWidget {
             ),
             selectedIcon: SvgPreviewWidget(
               iconPath: AppAssets.settingsSolid,
-              color: context.colors.onSurface,
+              color: context.colors.surface,
               height: 28,
             ),
           ),

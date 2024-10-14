@@ -3,15 +3,13 @@ import 'package:weather_app/common/services/theme_control/supported_locales_enum
 import 'package:weather_app/common/services/theme_control/supported_themes_enum.dart';
 
 abstract interface class ISettingsRepository {
+  Future<SupportedLocalesEnum> getLanguage();
   Future<(void, IWeatherException?)> saveLanguage({
     required SupportedLocalesEnum locale,
   });
 
-  Future<SupportedLocalesEnum> getLanguage();
-
+  Future<SupportedThemesEnum> getTheme();
   Future<(void, IWeatherException?)> saveTheme({
     required SupportedThemesEnum theme,
   });
-
-  Future<SupportedThemesEnum> getTheme();
 }

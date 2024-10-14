@@ -28,4 +28,14 @@ class Weather {
       throw DecoderException(message: 'Fail decode Weather, $e');
     }
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'location': location.toJson(),
+      'current': current.toJson(),
+      'forecast': {
+        'forecastday': day.map((e) => e.toJson()).toList(),
+      },
+    };
+  }
 }

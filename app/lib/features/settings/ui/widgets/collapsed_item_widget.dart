@@ -3,7 +3,7 @@ import 'package:design_system/design_system.dart';
 import 'package:design_system/resources/utils/app_assets.dart';
 import 'package:weather_app/common/services/theme_control/theme_control.dart';
 import 'package:weather_app/common/utils/extensions/context_extension.dart';
-import 'package:weather_app/features/settings/data/models/response/config__option_view_type.dart';
+import 'package:weather_app/features/settings/data/models/response/config_option_view_type.dart';
 
 class CollapsedItemWidget extends StatelessWidget {
   final ConfigOptionViewType type;
@@ -23,15 +23,13 @@ class CollapsedItemWidget extends StatelessWidget {
     return ListTile(
       leading: SvgPreviewWidget(
         iconPath: icon,
-        color: context.colors.tertiary,
+        color: context.colors.outlineVariant,
       ),
       title: Row(
         children: [
           Text(
             title,
-            style: context.text.bodyLarge?.copyWith(
-              color: context.colors.tertiary,
-            ),
+            style: context.text.bodyLarge,
           ),
           const Spacer(),
           Visibility(
@@ -40,7 +38,10 @@ class CollapsedItemWidget extends StatelessWidget {
           ),
         ],
       ),
-      trailing: const Icon(Icons.keyboard_arrow_down_sharp),
+      trailing: Icon(
+        Icons.keyboard_arrow_down_sharp,
+        color: context.colors.outlineVariant,
+      ),
     );
   }
 

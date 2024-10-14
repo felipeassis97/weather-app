@@ -12,6 +12,7 @@ final class WeatherServiceLocator {
     getIt.registerFactory<IWeatherRepository>(
       () => WeatherRepository(
         client: getIt.get<IClientService>(),
+        cacheManager: getIt.get<ICacheManager>(),
       ),
     );
 

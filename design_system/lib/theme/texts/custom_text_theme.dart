@@ -10,7 +10,7 @@ class CustomTextTheme {
         letterSpacing: -0.25,
         fontFamily: 'RussoOne',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       displayMedium: TextStyle(
         fontSize: 45,
@@ -18,7 +18,7 @@ class CustomTextTheme {
         letterSpacing: -0.25,
         fontFamily: 'RussoOne',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       displaySmall: TextStyle(
         fontSize: 36,
@@ -26,7 +26,7 @@ class CustomTextTheme {
         letterSpacing: -0.25,
         fontFamily: 'RussoOne',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
 
       // Headline Fonts
@@ -36,7 +36,7 @@ class CustomTextTheme {
         letterSpacing: -0.25,
         fontFamily: 'RussoOne',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       headlineMedium: TextStyle(
         fontSize: 28,
@@ -44,7 +44,7 @@ class CustomTextTheme {
         letterSpacing: -0.25,
         fontFamily: 'RussoOne',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       headlineSmall: TextStyle(
         fontSize: 24,
@@ -52,7 +52,7 @@ class CustomTextTheme {
         letterSpacing: -0.25,
         fontFamily: 'RussoOne',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
 
       // Title Fonts
@@ -62,7 +62,7 @@ class CustomTextTheme {
         letterSpacing: -0.25,
         fontFamily: 'ChakraPetch',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       titleMedium: TextStyle(
         fontSize: 16,
@@ -70,7 +70,7 @@ class CustomTextTheme {
         letterSpacing: -0.25,
         fontFamily: 'ChakraPetch',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       titleSmall: TextStyle(
         fontSize: 14,
@@ -78,7 +78,7 @@ class CustomTextTheme {
         letterSpacing: 0.1,
         fontFamily: 'ChakraPetch',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
 
       // Label Fonts
@@ -88,7 +88,7 @@ class CustomTextTheme {
         letterSpacing: 0.1,
         fontFamily: 'ChakraPetch',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       labelMedium: TextStyle(
         fontSize: 12,
@@ -96,7 +96,7 @@ class CustomTextTheme {
         letterSpacing: 0.5,
         fontFamily: 'ChakraPetch',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       labelSmall: TextStyle(
         fontSize: 11,
@@ -104,7 +104,7 @@ class CustomTextTheme {
         letterSpacing: 0.5,
         fontFamily: 'ChakraPetch',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
 
       // Body Fonts
@@ -114,7 +114,7 @@ class CustomTextTheme {
         letterSpacing: 0.5,
         fontFamily: 'ChakraPetch',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       bodyMedium: TextStyle(
         fontSize: 14,
@@ -122,7 +122,7 @@ class CustomTextTheme {
         letterSpacing: 0.5,
         fontFamily: 'ChakraPetch',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
       bodySmall: TextStyle(
         fontSize: 12,
@@ -130,7 +130,7 @@ class CustomTextTheme {
         letterSpacing: 0.5,
         fontFamily: 'ChakraPetch',
         package: 'design_system',
-        //color: colorScheme.onTertiary,
+        color: colorScheme.outlineVariant,
       ),
     );
   }

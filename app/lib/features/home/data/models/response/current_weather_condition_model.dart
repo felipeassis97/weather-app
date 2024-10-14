@@ -20,4 +20,11 @@ class CurrentWeatherCondition {
       throw DecoderException(message: 'Fail decode Condition, $e');
     }
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      "text": type.name,
+      "icon": icon.replaceAll('https:', ''),
+    };
+  }
 }

@@ -58,16 +58,15 @@ class _SplashPageState extends State<SplashPage>
     final cubit = BlocProvider.of<InitializationCubit>(context);
     await cubit.loadUserPreferences();
 
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      isFirstRun = await cubit.checkIfFirstRun();
+    isFirstRun = await cubit.checkIfFirstRun();
 
-      Future.delayed(const Duration(seconds: 3), () async {
-        if (mounted) {
-          isFirstRun
-              ? context.pushReplacementNamed(RouteName.onboarding)
-              : context.pushReplacementNamed(RouteName.home);
-        }
-      });
+    Future.delayed(const Duration(seconds: 3), () async {
+      // if (mounted) {
+      isFirstRun
+          ? context.pushReplacementNamed(RouteName.onboarding)
+          : context.pushReplacementNamed(RouteName.home);
+      //  }
+      //  });
     });
   }
 

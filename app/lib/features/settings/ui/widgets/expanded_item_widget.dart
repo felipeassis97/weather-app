@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/common/services/theme_control/theme_control.dart';
 import 'package:weather_app/common/utils/extensions/context_extension.dart';
-import 'package:weather_app/features/settings/data/models/response/config__option_view_type.dart';
+import 'package:weather_app/features/settings/data/models/response/config_option_view_type.dart';
 import 'package:weather_app/features/settings/ui/bloc/settings_cubit.dart';
 import 'package:weather_app/features/settings/ui/widgets/collapsed_item_widget.dart';
 
@@ -52,9 +52,7 @@ class _ExpandedItemWidgetState extends State<ExpandedItemWidget> {
                       const SizedBox(width: 2),
                       Text(
                         _currentList[index],
-                        style: context.text.bodyMedium?.copyWith(
-                          color: context.colors.tertiary,
-                        ),
+                        style: context.text.bodyMedium,
                       ),
                       const SizedBox(width: 12),
                     ],
@@ -78,13 +76,9 @@ class _ExpandedItemWidgetState extends State<ExpandedItemWidget> {
 
   List<String> get _currentList {
     if (widget.type == ConfigOptionViewType.theme) {
-      return widget.themeControl.supportedThemes
-          .map((e) => e.toString(context.textLocale))
-          .toList();
+      return widget.themeControl.supportedThemes.map((e) => e.toString(context.textLocale)).toList();
     } else {
-      return widget.themeControl.supportedLocales
-          .map((e) => e.toString(context.textLocale))
-          .toList();
+      return widget.themeControl.supportedLocales.map((e) => e.toString(context.textLocale)).toList();
     }
   }
 }

@@ -33,10 +33,21 @@ extension Formatter on DateTime {
 
   DateTime fromTzDateTime(String timezone) {
     final location = tz.getLocation(timezone);
-    final localDateTime = DateTime.now();
-    final tzDateTime = tz.TZDateTime.from(localDateTime, location);
+    final tzDateTime = tz.TZDateTime.from(this, location);
 
-    print(tzDateTime);
+    return DateTime(
+      tzDateTime.year,
+      tzDateTime.month,
+      tzDateTime.day,
+      tzDateTime.hour,
+      tzDateTime.minute,
+    );
+  }
+
+  DateTime dateFromTz(String timezone) {
+    final location = tz.getLocation(timezone);
+    final tzDateTime = tz.TZDateTime.from(this, location);
+
     return DateTime(
       tzDateTime.year,
       tzDateTime.month,

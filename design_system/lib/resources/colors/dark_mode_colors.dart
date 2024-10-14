@@ -12,6 +12,7 @@ class DarkModeColors {
         secondary: Color(0XFF104084),
         tertiary: Colors.white,
         onTertiary: Colors.black,
+        outlineVariant: Colors.white,
       );
 
   static ColorScheme get _nightContrast => ColorScheme.fromSeed(
@@ -22,5 +23,6 @@ class DarkModeColors {
         secondary: Color(0XFF104084),
         tertiary: Colors.white,
         onTertiary: Colors.black,
+        outlineVariant: Colors.white,
       );
 }

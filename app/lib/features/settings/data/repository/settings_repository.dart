@@ -9,7 +9,6 @@ import 'package:weather_app/features/settings/data/repository/i_settings_reposit
 
 class SettingsRepository implements ISettingsRepository {
   final ICacheManager cacheManager;
-
   const SettingsRepository({required this.cacheManager});
 
   @override
@@ -25,24 +24,20 @@ class SettingsRepository implements ISettingsRepository {
 
   @override
   Future<SupportedLocalesEnum> getLanguage() async {
-    try {
-      final lang = await cacheManager.get(ControllersEnum.language);
-      return SupportedLocalesEnum.fromCode(lang);
-    } on CacheException catch (e) {
-      log('', error: 'Error while getting language: $e');
-      return SupportedLocalesEnum.en;
-    }
+    final lang = await cacheManager.get(ControllersEnum.language);
+
+    return lang != null
+        ? SupportedLocalesEnum.fromCode(lang)
+        : SupportedLocalesEnum.en;
   }
 
   @override
   Future<SupportedThemesEnum> getTheme() async {
-    try {
-      final mode = await cacheManager.get(ControllersEnum.themeMode);
-      return SupportedThemesEnum.fromMode(mode);
-    } on CacheException catch (e) {
-      log('', error: 'Error while getting theme: $e');
-      return SupportedThemesEnum.light;
-    }
+    final mode = await cacheManager.get(ControllersEnum.themeMode);
+
+    return mode != null
+        ? SupportedThemesEnum.fromMode(mode)
+        : SupportedThemesEnum.light;
   }
 
   @override
