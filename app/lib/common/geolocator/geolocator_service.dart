@@ -4,13 +4,19 @@ import 'package:weather_app/common/geolocator/permission_type_enum.dart';
 
 class GeolocatorService implements IGeolocatorService {
   @override
-  Future<(double, double)> getCurrentPosition() async {
-    try {
+  Future<(double, double)?> getCurrentPosition() async {
+    final isLocationEnabled = await isLocationServiceEnabled();
+    final permission = await requestPermission();
+
+    final canGetLocation = isLocationEnabled &&
+        (permission == PermissionTypeEnum.always ||
+            permission == PermissionTypeEnum.whileInUse);
+
+    if (canGetLocation) {
       final position = await Geolocator.getCurrentPosition();
       return (position.latitude, position.longitude);
-    } catch (e) {
-      throw Exception('Failed to get position, $e');
     }
+    return null;
   }
 
   @override

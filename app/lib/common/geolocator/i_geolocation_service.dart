@@ -5,5 +5,5 @@ abstract class IGeolocatorService {
   Future<void> openLocationSettings();
   Future<bool> isLocationServiceEnabled();
   Future<PermissionTypeEnum> requestPermission();
-  Future<(double lat, double lng)> getCurrentPosition();
+  Future<(double lat, double lng)?> getCurrentPosition();
 }

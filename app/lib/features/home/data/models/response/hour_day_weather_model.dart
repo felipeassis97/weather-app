@@ -28,4 +28,14 @@ class HourDayWeatherModel {
       throw DecoderException(message: 'Fail decode HourDayWeatherModel, $e');
     }
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'time': time.toIso8601String(),
+      'temp_c': tempC,
+      'temp_f': tempF,
+      'is_day': isDay ? 1 : 0,
+      'condition': condition.toJson(),
+    };
+  }
 }

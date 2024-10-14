@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/common/service_locator/main_service_locator.dart';
 import 'package:weather_app/common/services/theme_control/theme_control.dart';
 import 'package:weather_app/common/utils/extensions/context_extension.dart';
-import 'package:weather_app/features/settings/data/models/response/config__option_view_type.dart';
+import 'package:weather_app/features/settings/data/models/response/config_option_view_type.dart';
 import 'package:weather_app/features/settings/ui/bloc/settings_cubit.dart';
 import 'package:weather_app/features/settings/ui/widgets/collapsed_item_widget.dart';
 import 'package:weather_app/features/settings/ui/widgets/expanded_item_widget.dart';

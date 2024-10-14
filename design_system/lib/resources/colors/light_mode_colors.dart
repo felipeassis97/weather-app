@@ -11,7 +11,8 @@ class LightModeColors {
         secondary: Colors.blueAccent.shade100,
         primary: Colors.yellow.shade50,
         tertiary: Colors.black,
-        onTertiary: Colors.white,
+        onTertiary: Colors.black,
+        outlineVariant: Colors.black,
       );
 
   static ColorScheme get _nightContrast => ColorScheme.fromSeed(
@@ -22,5 +23,6 @@ class LightModeColors {
         secondary: Color(0xff023047),
         tertiary: Colors.white,
         onTertiary: Colors.black,
+        outlineVariant: Colors.black,
       );
 }

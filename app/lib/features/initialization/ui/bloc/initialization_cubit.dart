@@ -12,8 +12,8 @@ final class InitializationCubit extends Cubit<InitializationState> {
   InitializationCubit() : super(LoadingInitializationState());
 
   final _themeControl = getIt.get<ThemeControl>();
-  final _geolocation = getIt.get<IGeolocatorService>();
   final _cacheManager = getIt.get<ICacheManager>();
+  final _geolocation = getIt.get<IGeolocatorService>();
   final _settingsRepository = getIt.get<ISettingsRepository>();
 
   Future<void> requestPermission() async {
@@ -23,17 +23,17 @@ final class InitializationCubit extends Cubit<InitializationState> {
 
   Future<bool> checkIfFirstRun() async {
     final result = await _cacheManager.get(ControllersEnum.firstRun);
-    return result == 'true';
+    return result != true.toString();
   }
 
   Future<void> setIsNotFirstRun() async {
-    await _cacheManager.save(ControllersEnum.firstRun, 'false');
+    await _cacheManager.save(ControllersEnum.firstRun, false.toString());
   }
 
   Future<void> loadUserPreferences() async {
-    final lang = await _settingsRepository.getLanguage();
     final theme = await _settingsRepository.getTheme();
-    _themeControl.setNewLocale(Locale(lang.code));
+    final lang = await _settingsRepository.getLanguage();
     _themeControl.setThemeMode(theme.mode);
+    _themeControl.setNewLocale(Locale(lang.code));
   }
 }

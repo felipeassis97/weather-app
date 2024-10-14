@@ -1,7 +1,8 @@
 enum ControllersEnum {
   firstRun('firstRun'),
   language('language'),
-  themeMode('themeMode');
+  themeMode('themeMode'),
+  weather('weather');
 
   final String key;
   const ControllersEnum(this.key);
@@ -16,6 +17,9 @@ enum ControllersEnum {
 
       case 'themeMode':
         return ControllersEnum.themeMode;
+
+      case 'weather':
+        return ControllersEnum.weather;
       default:
         throw Exception('Key not found $key');
     }
